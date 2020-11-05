@@ -5,20 +5,27 @@
 */
 int main(){
 
-	float num1;
-	int num2;
-	float ans;
+	float num1, num2, ans;
 	char op;
 	printf("\nEnter an operator (+,-,/,*): \n");
-	scanf("%c", &op);
+	scanf("%c",&op);
 
 	printf("\nEnter two numbers: ");
-	scanf("%f", &num1);
-	scanf("%f", &num2);
+	scanf("%f",&num1);
+	scanf("%f",&num2);
 	
 	switch(op){
-		case '+' : 
+		case '+' :
 			ans = num1 + num2;
+			break;
+		case '-' :
+			ans = num1 - num2;
+			break;
+		case '*' :
+			ans = num1 * num2;
+			break;
+		case '/' :
+			ans = num1 / num2;
 			break;
 		default:
 			printf("Enter a correct operator!");

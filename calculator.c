@@ -10,11 +10,11 @@ int main(){
 	float ans;
 	char op;
 	printf("\nEnter an operator (+,-,/,*): \n");
-	scanf("%c",&op);
+	scanf("%c", &op);
 
 	printf("\nEnter two numbers: ");
-	scanf("%f",&num1);
-	scanf("%f",&num2);
+	scanf("%f", &num1);
+	scanf("%f", &num2);
 	
 	switch(op){
 		case '+' : 
